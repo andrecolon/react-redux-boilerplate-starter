@@ -1,0 +1,22 @@
+.input-group {
+  /* THIS IS FOR SMALLER SCREENS */
+   display: flex; /* make elements move left to right */
+   flex-direction: column;
+   margin-bottom: $m-size;
+
+   @media (min-width: $desktop-breakpoint) {
+     /* THIS IS FOR LARGER SCREENS */
+     /* these are the styles we will apply for larger screens */
+     flex-direction: row;
+     margin-bottom: $l-size;
+   }
+
+  &__item {
+   margin-bottom: $s-size;
+
+   @media (min-width: $desktop-breakpoint) {
+     margin: 0 $s-size;
+     margin-right: $s-size;
+   }
+  }
+}

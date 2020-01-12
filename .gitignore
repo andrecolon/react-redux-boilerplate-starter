@@ -1,0 +1,11 @@
+yarn-error.log
+public/dist/
+*.env
+config/*.json
+playground.js
+node_modules
+.vscode
+*.log
+.DS_Store
+.env.test
+.env.development

@@ -1,0 +1,40 @@
+// Add Option Error
+.add-option {
+
+  &__error {
+    color: $off-white;
+    font-style: italic;
+    margin: $m-size 0 0 0;
+    padding: 0 $m-size;
+  }
+
+  &__form {
+    display: flex;
+    flex-direction: column;
+    padding: $m-size;
+
+    // Media queries
+    // up and until 45rem follow the rules of this media query
+    @media (min-width: $desktop-breakpoint) {
+      flex-direction: row;
+    }
+  }
+
+  &__input {
+    background: $dark-blue;
+    border: none;
+    border-bottom: 0.3rem solid darken($dark-blue, 10%);
+    color: $off-white;
+    flex-grow: 1;
+    margin: 0 0 $s-size 0;
+
+    @media (min-width: $desktop-breakpoint) {
+      margin: 0 $s-size 0 0;
+    }
+    padding: $s-size;
+  }
+
+}
+
+
+
